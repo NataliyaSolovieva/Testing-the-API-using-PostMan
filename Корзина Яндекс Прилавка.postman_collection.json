@@ -1,0 +1,473 @@
+{
+	"info": {
+		"_postman_id": "07c40ed7-44f5-42f3-b5ec-42518e9ea17a",
+		"name": "Корзина Яндекс Прилавка",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29546192"
+	},
+	"item": [
+		{
+			"name": "Получение продуктов в корзине с существующим id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://62110dc2-a988-443c-a5d5-00011679112d.serverhub.praktikum-services.ru/api/v1/orders/2",
+					"protocol": "https",
+					"host": [
+						"62110dc2-a988-443c-a5d5-00011679112d",
+						"serverhub",
+						"praktikum-services",
+						"ru"
+					],
+					"path": [
+						"api",
+						"v1",
+						"orders",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Получение продуктов в корзине с существующим id и authToken",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Bearer a929a69c-bd0e-4e5a-91c9-54160a2322b2",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"productsList\": [\r\n        {\r\n            \"id\": 1,\r\n            \"quantity\": 4\r\n        },\r\n        {\r\n            \"id\": 5,\r\n            \"quantity\": 2\r\n        },\r\n        {\r\n            \"id\": 3,\r\n            \"quantity\": 1\r\n        },\r\n        {\r\n            \"id\": 4,\r\n            \"quantity\": 1\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://62110dc2-a988-443c-a5d5-00011679112d.serverhub.praktikum-services.ru/api/v1/orders/2",
+					"protocol": "https",
+					"host": [
+						"62110dc2-a988-443c-a5d5-00011679112d",
+						"serverhub",
+						"praktikum-services",
+						"ru"
+					],
+					"path": [
+						"api",
+						"v1",
+						"orders",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Получение продуктов в корзине с существующим id и несуществующим authToken",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Bearer jknnFApafP4a",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"productsList\": [\r\n        {\r\n            \"id\": 1,\r\n            \"quantity\": 4\r\n        },\r\n        {\r\n            \"id\": 5,\r\n            \"quantity\": 2\r\n        },\r\n        {\r\n            \"id\": 3,\r\n            \"quantity\": 1\r\n        },\r\n        {\r\n            \"id\": 4,\r\n            \"quantity\": 1\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://62110dc2-a988-443c-a5d5-00011679112d.serverhub.praktikum-services.ru/api/v1/orders/2",
+					"protocol": "https",
+					"host": [
+						"62110dc2-a988-443c-a5d5-00011679112d",
+						"serverhub",
+						"praktikum-services",
+						"ru"
+					],
+					"path": [
+						"api",
+						"v1",
+						"orders",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Получение продуктов в корзине с существующим id 4",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"productsList\": [\r\n        {\r\n            \"id\": 1,\r\n            \"quantity\": 4\r\n        },\r\n        {\r\n            \"id\": 5,\r\n            \"quantity\": 2\r\n        },\r\n        {\r\n            \"id\": 3,\r\n            \"quantity\": 1\r\n        },\r\n        {\r\n            \"id\": 4,\r\n            \"quantity\": 1\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://50fbd201-907a-4407-aa50-78ddf5ce7380.serverhub.praktikum-services.ru/api/v1/orders/1",
+					"protocol": "https",
+					"host": [
+						"50fbd201-907a-4407-aa50-78ddf5ce7380",
+						"serverhub",
+						"praktikum-services",
+						"ru"
+					],
+					"path": [
+						"api",
+						"v1",
+						"orders",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Добавление продуктов в корзину",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"productsList\": [\r\n        {\r\n            \"id\": 1,\r\n            \"quantity\": 1\r\n        },\r\n        {\r\n            \"id\": 5,\r\n            \"quantity\": 1\r\n        },\r\n        {\r\n            \"id\": 4,\r\n            \"quantity\": 1\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://50fbd201-907a-4407-aa50-78ddf5ce7380.serverhub.praktikum-services.ru/api/v1/orders/1",
+					"protocol": "https",
+					"host": [
+						"50fbd201-907a-4407-aa50-78ddf5ce7380",
+						"serverhub",
+						"praktikum-services",
+						"ru"
+					],
+					"path": [
+						"api",
+						"v1",
+						"orders",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Добавление продуктов в корзину с типом данных строка в количестве",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"productsList\": [\r\n        {\r\n            \"id\": 1,\r\n            \"quantity\": \"а\"\r\n        },\r\n        {\r\n            \"id\": 5,\r\n            \"quantity\": \"а\"\r\n        },\r\n        {\r\n            \"id\": 4,\r\n            \"quantity\": \"а\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://62110dc2-a988-443c-a5d5-00011679112d.serverhub.praktikum-services.ru/api/v1/orders/1",
+					"protocol": "https",
+					"host": [
+						"62110dc2-a988-443c-a5d5-00011679112d",
+						"serverhub",
+						"praktikum-services",
+						"ru"
+					],
+					"path": [
+						"api",
+						"v1",
+						"orders",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Добавление продуктов в корзину без параметра количество",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"productsList\": [\r\n        {\r\n            \"id\": 1\r\n        },\r\n        {\r\n            \"id\": 5\r\n        },\r\n        {\r\n            \"id\": 4\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://62110dc2-a988-443c-a5d5-00011679112d.serverhub.praktikum-services.ru/api/v1/orders/1",
+					"protocol": "https",
+					"host": [
+						"62110dc2-a988-443c-a5d5-00011679112d",
+						"serverhub",
+						"praktikum-services",
+						"ru"
+					],
+					"path": [
+						"api",
+						"v1",
+						"orders",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Добавление продуктов в корзину_пустой список",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"productsList\": [ ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://50fbd201-907a-4407-aa50-78ddf5ce7380.serverhub.praktikum-services.ru/api/v1/orders/1",
+					"protocol": "https",
+					"host": [
+						"50fbd201-907a-4407-aa50-78ddf5ce7380",
+						"serverhub",
+						"praktikum-services",
+						"ru"
+					],
+					"path": [
+						"api",
+						"v1",
+						"orders",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Добавление продуктов в корзину_строка вместо списка",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"productsList\": \"ФФ\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://62110dc2-a988-443c-a5d5-00011679112d.serverhub.praktikum-services.ru/api/v1/orders/1",
+					"protocol": "https",
+					"host": [
+						"62110dc2-a988-443c-a5d5-00011679112d",
+						"serverhub",
+						"praktikum-services",
+						"ru"
+					],
+					"path": [
+						"api",
+						"v1",
+						"orders",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Добавление продуктов в корзину_без списка",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://62110dc2-a988-443c-a5d5-00011679112d.serverhub.praktikum-services.ru/api/v1/orders/1",
+					"protocol": "https",
+					"host": [
+						"62110dc2-a988-443c-a5d5-00011679112d",
+						"serverhub",
+						"praktikum-services",
+						"ru"
+					],
+					"path": [
+						"api",
+						"v1",
+						"orders",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Создание корзины",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"productsList\": [\r\n        {\r\n            \"id\": 1,\r\n            \"quantity\": 1\r\n        },\r\n        {\r\n            \"id\": 5,\r\n            \"quantity\": 1\r\n        },\r\n        {\r\n            \"id\": 3,\r\n            \"quantity\": 1\r\n        },\r\n        {\r\n            \"id\": 4,\r\n            \"quantity\": 1\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://62110dc2-a988-443c-a5d5-00011679112d.serverhub.praktikum-services.ru/api/v1/orders",
+					"protocol": "https",
+					"host": [
+						"62110dc2-a988-443c-a5d5-00011679112d",
+						"serverhub",
+						"praktikum-services",
+						"ru"
+					],
+					"path": [
+						"api",
+						"v1",
+						"orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Удаление корзины",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"productsList\": [\r\n        {\r\n            \"id\": 1,\r\n            \"quantity\": 1\r\n        },\r\n        {\r\n            \"id\": 5,\r\n            \"quantity\": 1\r\n        },\r\n        {\r\n            \"id\": 3,\r\n            \"quantity\": 1\r\n        },\r\n        {\r\n            \"id\": 4,\r\n            \"quantity\": 1\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://50fbd201-907a-4407-aa50-78ddf5ce7380.serverhub.praktikum-services.ru/api/v1/orders/4",
+					"protocol": "https",
+					"host": [
+						"50fbd201-907a-4407-aa50-78ddf5ce7380",
+						"serverhub",
+						"praktikum-services",
+						"ru"
+					],
+					"path": [
+						"api",
+						"v1",
+						"orders",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Получение продуктов в корзине с несуществующим id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"productsList\": [\r\n        {\r\n            \"id\": 1,\r\n            \"quantity\": 4\r\n        },\r\n        {\r\n            \"id\": 5,\r\n            \"quantity\": 2\r\n        },\r\n        {\r\n            \"id\": 3,\r\n            \"quantity\": 1\r\n        },\r\n        {\r\n            \"id\": 4,\r\n            \"quantity\": 1\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://50fbd201-907a-4407-aa50-78ddf5ce7380.serverhub.praktikum-services.ru/api/v1/orders/100500",
+					"protocol": "https",
+					"host": [
+						"50fbd201-907a-4407-aa50-78ddf5ce7380",
+						"serverhub",
+						"praktikum-services",
+						"ru"
+					],
+					"path": [
+						"api",
+						"v1",
+						"orders",
+						"100500"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
